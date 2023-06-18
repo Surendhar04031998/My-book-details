@@ -1,0 +1,13 @@
+﻿@model MyBookDetails.Controllers.Book[]
+@{
+    ViewData["Title"] = "Book details";
+}
+
+<div>
+    <ul>
+        @foreach (var book in Model)
+        {
+            <li>@book.title - @book.author</li>
+        }
+    </ul>
+</div>
